@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import { BrowserRouter, Routes, Route, NavLink, useLocation } from "react-router-dom";
+import {  HashRouter, Routes, Route, NavLink, useLocation } from "react-router-dom";
 import CityPage from "./pages/CityPage";
 import BuildPage from "./pages/BuildPage";
 import ResourcesPage from "./pages/ResourcesPage";
@@ -64,9 +64,9 @@ function AppInner() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppInner />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
